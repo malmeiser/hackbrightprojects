@@ -30,9 +30,9 @@ def remove_item():
     edit = user_input()
     print lists_dict[edit]
     print "What would you like to remove?"
-    remove = user_input()
-    if remove in lists_dict[edit]:
-        del remove
+    item = user_input()
+    if item in edit:
+        edit.remove(item)
     print lists_dict[edit]
 
 def print_menu():
